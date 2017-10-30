@@ -23,7 +23,8 @@ Tyco is supplier of security systems such as CCTVs, Circuit boards, Electronic A
 THE PROBLEM:
 -	A very fundamental problem for any security systems based company is when their systems predict a false positive.
 
-An example
+An example:
+
 Tyco builds motion detector cameras. A motion detector camera is a security system that tracks movement of an object in its surveillance radar. Once the object is identified on the detector lens, the camera follows the objects position due to its motion sensing ability. This is utilized to alert the company and further alert the police for immediate action. Here lies the big elephant we will discuss about.
 As long as it is a crime detection by the detector, then the alert sent to the police is good. But what if it’s any other object which has nothing to associate with crime whatsoever. Eg. Racoon, Hare etc. However, what if the motion detector detected is as a threat. Hence, the problem faced by Camera Motion Detector is of False positives. False positives are instances when a suspect of threat is identified when it is not.
 There are interesting scenarios that may further add to the misery. Imagine a scenario where a person walks into an apartment with a Racoon costume. Even though this is a prank situation, a false positive may occur. Therefore the kind of activity of the object is important, than the mere object itself in most cases.
@@ -31,15 +32,19 @@ There are interesting scenarios that may further add to the misery. Imagine a sc
 
 
 IMPLICATIONS OF THE PROBLEM:
+
 As a business person, tradeoffs are the most important aspect of decision making. The product’s developer might argue that the likelihood of such a prank instance is very less. Therefore, I would not invest in further improving the model’s accuracy. Hence, several questions intrigue a business person such as what are the costs and how much are the costs associated with building an better detection additional plug, what are the costs incurred for false positives, will I lose my customers, how much of my profit is going to get affected, how will the dynamics related to the police department come into play, and so on and so forth.
 
 Also depending on the company’s total customer base, the development and operations costs will be different. The code build for better detection has to be modified for different servers. For some companies, it might be very computationally expensive. In the future, when consultants make a recommendation for additional plugins, they will need a strong justification for the associated costs.
 
 
 GOAL:
+
 Our objective is to build a data pipeline that will help solve the issue related to detection of false positive suspects.
 
+
 MAIN ACTIVITIES:
+
 Our goal is pertinent to resolving issues such as appropriately detecting objects in an image such that highest possible accuracy can be achieved. This will be extremely beneficial for security based companies that rely on machine learning and AI to precisely identify what information lies in a particular graphic file such as an image or video.
 Hence, our main activities are:
 Gather image data for processing
@@ -48,8 +53,10 @@ Organize and aggregate the data for consumption
 
 
 TOOLS and TECH:
+
 We can imagine a person writing codes to gather the data from a database, then organizing it on his personal computer, then loading to another device to convert the format of data. Then redownloading it, making changes and then pushing it to his client.
 For our goal, we can imagine using technology to build an automated process which includes extraction of files (images or videos captured by the camera), management of these files across the interlink, analysis of these files and so on. For achieving this, we look into cloud platform utilization for automation deployment. Following are the software and tools we will utilize to help achieve our goals:
+
 1.	Kubernetes
 2.	Docker
 3.	Pachyderm
@@ -58,6 +65,7 @@ For our goal, we can imagine using technology to build an automated process whic
 
 
 IMPLEMENTATION:
+
 Docker allows to create an image of process flows (processing stages) in the form of a docker containers. Below are examples of docker containers and how docker works:
 
 ![dock](https://user-images.githubusercontent.com/31287687/32167660-f5b557e4-bd3f-11e7-8a8b-bd7a39e07f7b.jpg)
@@ -78,6 +86,7 @@ Pachyderm is extremely useful for our goal in terms of data versioning, defining
 
 Python will be utilized for data manipulation, processing and function oriented activities.
 For a simpler understanding, we can say that Kubernetes handles the server allotment for Docker’s containers (and the images), and Docker is utilized to create Docker containers (and the images) of processing stages. Pachyderm will allow us to create various versions of our dataset, defining our workflow and management and dataset related administration. TensorFlow will allow us to analyze our datasets.
+
 
 Considering the heavy usage of various cloud, we might work with at least one of the following data storages:
 
