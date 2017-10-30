@@ -20,7 +20,7 @@ Tyco is supplier of security systems such as CCTVs, Circuit boards, Electronic A
 
 
 
-THE PROBLEM:
+### THE PROBLEM:
 -	A very fundamental problem for any security systems based company is when their systems predict a false positive.
 
 An example:
@@ -31,19 +31,19 @@ There are interesting scenarios that may further add to the misery. Imagine a sc
 -	Thus, a data pipeline that can help solve such a problem is very essential for companies facing false positive results.
 
 
-IMPLICATIONS OF THE PROBLEM:
+### IMPLICATIONS OF THE PROBLEM:
 
 As a business person, tradeoffs are the most important aspect of decision making. The product’s developer might argue that the likelihood of such a prank instance is very less. Therefore, I would not invest in further improving the model’s accuracy. Hence, several questions intrigue a business person such as what are the costs and how much are the costs associated with building an better detection additional plug, what are the costs incurred for false positives, will I lose my customers, how much of my profit is going to get affected, how will the dynamics related to the police department come into play, and so on and so forth.
 
 Also depending on the company’s total customer base, the development and operations costs will be different. The code build for better detection has to be modified for different servers. For some companies, it might be very computationally expensive. In the future, when consultants make a recommendation for additional plugins, they will need a strong justification for the associated costs.
 
 
-GOAL:
+### GOAL:
 
 Our objective is to build a data pipeline that will help solve the issue related to detection of false positive suspects.
 
 
-MAIN ACTIVITIES:
+### MAIN ACTIVITIES:
 
 Our goal is pertinent to resolving issues such as appropriately detecting objects in an image such that highest possible accuracy can be achieved. This will be extremely beneficial for security based companies that rely on machine learning and AI to precisely identify what information lies in a particular graphic file such as an image or video.
 Hence, our main activities are:
@@ -52,7 +52,7 @@ Process images to detect potential threats
 Organize and aggregate the data for consumption
 
 
-TOOLS and TECH:
+### TOOLS and TECH:
 
 We can imagine a person writing codes to gather the data from a database, then organizing it on his personal computer, then loading to another device to convert the format of data. Then redownloading it, making changes and then pushing it to his client.
 For our goal, we can imagine using technology to build an automated process which includes extraction of files (images or videos captured by the camera), management of these files across the interlink, analysis of these files and so on. For achieving this, we look into cloud platform utilization for automation deployment. Following are the software and tools we will utilize to help achieve our goals:
@@ -64,7 +64,7 @@ For our goal, we can imagine using technology to build an automated process whic
 5.	Python -  library TensorFlow
 
 
-IMPLEMENTATION:
+### IMPLEMENTATION:
 
 Docker allows to create an image of process flows (processing stages) in the form of a docker containers. Below are examples of docker containers and how docker works:
 
