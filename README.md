@@ -100,6 +100,11 @@ This storage can be observed something similar to a drive on our computer, eg. C
 This storage is extremely handy when it comes to dumping large amounts of data that is unstructured and unclean, such data is utilized in the future but temporarily requires storage that is cost-effective and flexible. Data is stored in a flat memory model and saved with a unique ID. Hence it becomes very easy to retrieve the data based on the unique id. Some of the storage applications include Big Data, Web Apps, Backup Archives etc.
 
 
+### CONCLUSION:
+Having studied the problem and new technologies in our class, we will build a model that can analyze images and placed into a data pipeline framework to benefit the end user. This model can be potentially used by any security systems based company.
+
+
+
 
 
 
